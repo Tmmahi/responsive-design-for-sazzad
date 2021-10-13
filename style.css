@@ -1,0 +1,162 @@
+/* Responsive Desing and Flex Degign Created By Tawyab Mahamud Mahi */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+section {
+  height: 600px;
+}
+h1 {
+  font-size: 30px;
+}
+
+p {
+  color: dimgray;
+  /* padding-right: 140px; */
+}
+span {
+  color: orange;
+}
+.background {
+  background-image: url(img/top-banner.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contant-left {
+  width: 40%;
+  margin-left: 5%;
+  padding-left: 2%;
+}
+.contant-pic {
+  width: 40%;
+}
+.contant-pic img {
+  max-width: 80%;
+}
+.btn {
+  border: 1px solid;
+  background-image: linear-gradient(90deg, lightsalmon, tomato);
+  padding: 10px 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.btn:hover {
+  color: black;
+}
+/* 2nd Part */
+.main {
+  width: 60%;
+  float: left;
+  margin-left: 8%;
+  padding-right: 20px;
+}
+.main-pic {
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+}
+.main-pic img {
+  max-width: 80%;
+}
+.dream {
+  background-image: url(img/dream-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.box {
+  box-shadow: 10px 10px 60px gray;
+  height: 60%;
+  padding-left: 40px;
+}
+.experience {
+  background-image: url(img/exp-bg.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+}
+.text_exr {
+  text-align: center;
+}
+#full-stack {
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, lightsalmon, whitesmoke);
+  border-image-slice: 1;
+}
+#baby {
+  border-left: 7px solid;
+  border-image: linear-gradient(180deg, blue, cyan);
+  border-image-slice: 1;
+}
+#footer {
+  text-align: center;
+}
+
+/* ===================Responsive=============================== */
+
+@media (max-width: 764px) {
+  h1 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .heading {
+    font-size: 20px;
+  }
+  .parag {
+    margin: 15px 40px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .background {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contant-left {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .contant-pic img {
+    max-width: 100%;
+  }
+
+  .dream {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .main-pic img {
+    max-width: 100%;
+  }
+
+  .experience {
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0px 30px;
+    text-align: center;
+  }
+  #full-stack {
+    margin: 30px 0;
+  }
+  .main {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
